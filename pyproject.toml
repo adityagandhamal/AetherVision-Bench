@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aethervision-bench"
+version = "0.1"
+
+authors = [
+  { name="Aniruddh Sikdar", email="aniruddhss@iisc.ac.in"},
+  { name="Aditya Gandhamal"},
+  { name="Suresh Sundaram"},
+]
+description = "AetherVision-Bench: An Open-Vocabulary RGB-Infrared Benchmark for Multi-Angle Segmentation across Aerial and Ground Perspectives"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["aethervision", "benchmark", "open-vocabulary", "semantic-segmentation", "zero-shot", "rgb-infrared"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'torch>=1.10.1',
+    'torchvision>=0.11.2',
+    'pandas>=1.5.1',
+    'numpy>=1.22.4,<2',
+    'iopath>=0.1.7',
+    'Pillow>=7.1',
+    'tqdm>=4.64.1',
+]
+
+[project.urls]
+"Paper" = "https://arxiv.org/abs/2506.03709"
+"Bug Tracker" = "https://github.com/aniruddhsikdar/AetherVision-Bench/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aethervision", "aethervision.*"]
