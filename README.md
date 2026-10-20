@@ -1,6 +1,10 @@
-# AetherVision-Bench
+# AetherVision-Bench [CVPRW 2025]
 
-Aniruddh Sikdar, Aditya Gandhamal, Suresh Sundaram
+Aniruddh Sikdar<sup>*</sup>, Aditya Gandhamal<sup>*</sup>, Suresh Sundaram
+
+<sup>*</sup>Equal contribution
+
+**Accepted at the Workshop on Foundation Models Meet Embodied Agents (FMEA), CVPR 2025**
 
 [[📄 Paper](https://arxiv.org/abs/2506.03709)] [[🌐 Project Page](https://aniruddhsikdar1.github.io/publications/pixel2perspective/)]
 
@@ -81,15 +85,15 @@ and the authors of the evaluated OVSS models for releasing their code and weight
 
 ## Citation
 
-Please cite our paper if you use AetherVision-Bench. Accepted (non-archival) at the Workshop on
-Foundation Models Meet Embodied Agents (FMEA), CVPR 2025 — cite the arXiv preprint:
+Please cite our paper if you use AetherVision-Bench:
 
 ```BibTeX
-@article{Sikdar2025AetherVisionBench,
-  title={{AetherVision-Bench: An Open-Vocabulary RGB-Infrared Benchmark for Multi-Angle Segmentation across Aerial and Ground Perspectives}},
+@inproceedings{sikdar2025aethervision,
+  title={AetherVision-Bench: An Open-Vocabulary RGB-Infrared Benchmark for Multi-Angle Segmentation across Aerial and Ground Perspectives},
   author={Sikdar, Aniruddh and Gandhamal, Aditya and Sundaram, Suresh},
-  journal={arXiv preprint arXiv:2506.03709},
-  note={Workshop on Foundation Models Meet Embodied Agents (FMEA), CVPR 2025},
-  year={2025}
+  booktitle={Workshop on Foundation Models Meet Embodied Agents at CVPR 2025 (Non-archival Track)},
+  year={2025},
+  note={Accepted (Non-archival)},
+  url={https://arxiv.org/abs/2506.03709}
 }
 ```
