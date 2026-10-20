@@ -1,6 +1,10 @@
 # AetherVision-Bench
 
-[[arXiv](https://arxiv.org/abs/2506.03709)]
+Aniruddh Sikdar, Aditya Gandhamal, Suresh Sundaram
+
+[[📄 Paper](https://arxiv.org/abs/2506.03709)] [[🌐 Project Page](https://aniruddhsikdar1.github.io/publications/pixel2perspective/)]
+
+![AetherVision-Bench viewpoints: ground-level, slant-angle and bird's-eye view, RGB and infrared](assets/viewpoints.png)
 
 This is the official toolkit for **AetherVision-Bench**, an open-vocabulary RGB-Infrared benchmark for
 multi-angle segmentation across aerial and ground perspectives, from the paper "AetherVision-Bench: An
