@@ -1,8 +1,8 @@
 # AetherVision-Bench [CVPRW 2025]
 
-Aniruddh Sikdar<sup>*</sup>, Aditya Gandhamal<sup>*</sup>, Suresh Sundaram
+Aniruddh Sikdar<sup>&ast;</sup>, Aditya Gandhamal<sup>&ast;</sup>, Suresh Sundaram
 
-<sup>*</sup>Equal contribution
+<sup>&ast;</sup>Equal contribution
 
 **Accepted at the Workshop on Foundation Models Meet Embodied Agents (FMEA), CVPR 2025**
 
