@@ -5,7 +5,7 @@
 All six datasets require a manual/requested download (see their sections below). For ISPRS Potsdam and
 UAVid, the preparation scripts then unzip and tile the data; for the remaining four they only verify the layout.
 
-- ISPRS Potsdam: https://www.isprs.org/education/benchmarks/UrbanSemLab/default.aspx (Potsdam)
+- ISPRS Potsdam: https://www.isprs.org/resources/datasets/benchmarks/UrbanSemLab/default.aspx (Potsdam)
 - UAVid: https://uavid.nl (Download -> Semantic Labelling with Images Only)
 - IndraEye: https://github.com/airl-iisc/IndraEye (dataset and download links: https://bit.ly/indraeye)
 - CART: https://data.caltech.edu/records/cks6g-ps927 (labeled subset), code at
@@ -60,7 +60,7 @@ Use `aethervision/datasets/register_TEMPLATE.py` and `aethervision/prepare_datas
 
 Registered names: `isprs_potsdam_sem_seg_test_rgb` (RGB), `isprs_potsdam_sem_seg_test_irrg` (IRRG)
 
-Dataset page: https://www.isprs.org/education/benchmarks/UrbanSemLab/default.aspx
+Dataset page: https://www.isprs.org/resources/datasets/benchmarks/UrbanSemLab/default.aspx
 
 Dataset provider: BSF Swissphoto (2012). ISPRS Potsdam dataset within the ISPRS Test Project on Urban
 Classification, 3D Building Reconstruction and Semantic Labeling.
