@@ -31,7 +31,7 @@ export DETECTRON2_DATASETS=datasets
 ```python
 import aethervision.datasets
 ```
-This registers all 10 dataset/modality combinations (6 datasets, RGB + IR where available) to the
+This registers all 11 dataset/modality combinations (6 datasets, RGB + IR where available) to the
 detectron2 `DatasetCatalog` (or the fallback catalog in `aethervision.utils.catalog` if detectron2 is not
 installed).
 
@@ -66,7 +66,9 @@ OVSeg and CAT-Seg) under three training regimes, each validated on all 6 benchma
 Settings 2 and 3 introduce an additional challenge of limited training samples and test whether a model
 fine-tuned on one viewpoint generalizes to the other two.
 
-Run all three settings with [eval.sh](eval.sh):
+Run all three settings with [eval.sh](eval.sh). It is a template: copy it into your model's repository (where
+`train_net.py`, configs and weights live), add `import aethervision.datasets` to `train_net.py`, and fill in
+the `<...>` placeholders:
 ```sh
 bash eval.sh
 ```

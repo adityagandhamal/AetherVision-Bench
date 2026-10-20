@@ -32,13 +32,28 @@ selected for their diversity in viewpoint, sensor and class vocabulary:
 This toolkit was designed to be easy to use for new model architectures, following the structure of the
 [MESS benchmark](https://github.com/blumenstiel/MESS), on which it builds.
 
+## Installation
+
+```sh
+git clone https://github.com/adityagandhamal/AetherVision-Bench.git
+cd AetherVision-Bench
+pip install -e .
+```
+
+To evaluate detectron2-based models (as in the paper), also install detectron2, see [setup_env.sh](setup_env.sh)
+for a reference environment.
+
 ## Usage
 
 Follow the steps in [DATASETS.md](DATASETS.md) to download and prepare the datasets, then register them by
 adding `import aethervision.datasets` to your evaluation code. If you are using detectron2, the datasets are
 registered to the detectron2 `DatasetCatalog`; otherwise `aethervision.utils.catalog.DatasetCatalog` is used.
 
-For evaluating a detectron2-based model on all datasets:
+`eval.sh` is a template: copy it into your model's repository (where `train_net.py`, configs and weights
+live), add `import aethervision.datasets` to `train_net.py`, and fill in the `<...>` placeholders.
+
+For evaluating a detectron2-based model on all datasets, where `train_net.py` is your model's own training
+script (see [eval.sh](eval.sh)):
 ```sh
 conda activate <your_env>
 
@@ -46,7 +61,7 @@ TEST_DATASETS="isprs_potsdam_sem_seg_test_rgb uavid_sem_seg_val indraeye_sem_seg
 
 for DATASET in $TEST_DATASETS
 do
- python evaluate.py --eval-only --config-file <your_config>.yaml --num-gpus 1 OUTPUT_DIR output/$DATASET DATASETS.TEST \(\"$DATASET\",\)
+ python train_net.py --eval-only --config-file <your_config>.yaml --num-gpus 1 OUTPUT_DIR output/$DATASET DATASETS.TEST \(\"$DATASET\",\)
 done
 ```
 
